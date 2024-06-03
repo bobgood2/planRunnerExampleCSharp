@@ -6,10 +6,7 @@ import asyncio
 
 async def main():
     config = common.Config()
-    config.awaitable_functions = {"search_email":[], "search_teams":[], "search_meetings":[], "create_dict":[], "wrap_string":[]}
-    config.module_blacklist=None
-    config.wrap_in_function_def =False
-    config.single_function=True
+    config.single_function=True  # changes the managed function calls, such that the function name is put in a parameter named: _fn
 
     server = language_server.ApiConductorServer(config)
     await server.start()
