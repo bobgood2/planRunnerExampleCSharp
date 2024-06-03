@@ -1,5 +1,10 @@
 # planRunnerExampleCSharp
 
+This example runs a client and a server, with a trivial implementation of what you might want to do on the client side.  The only file you should change is Program.cs, and the server should be unmodified, and the client library should be unchanged.
+
+But you can add more API entry points, and try different kinds of plans with this set up, and see how it works.
+
+
 # Set up the python server that executes plans
 Install Python.
 Download this repo
