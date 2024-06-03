@@ -5,6 +5,10 @@ using System.Text;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 
+/// <summary>
+/// DO NOT MODIFY THIS LIBRARY.   it is meant to be like a nuget package that interfaces with an existing server.
+/// Everything you need to change is in Program.cs
+/// </summary>
 public class ApiConductorClient
 {
     private readonly Uri _uri;
