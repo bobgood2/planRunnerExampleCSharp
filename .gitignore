@@ -1,0 +1,9 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/planRunnerExampleCSharp
+/Plan_Client/bin/Debug/net7.0
+/Plan_Client/obj
+/Plan_Server/env
+/Plan_Server/__pycache__
