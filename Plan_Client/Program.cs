@@ -49,7 +49,43 @@ class Program
     {
         var config = new ApiConductorClient.Config
         {
-            ModuleBlacklist = new List<string> { "io", "sockets", "sys" }
+            //  the following modules cannot be specified in a import or import from statement.
+            // any other module either in the standard distribution or installed on the server can
+            // be used.  if you don't trust any module, disable the import and import from statements
+            ModuleBlacklist = new List<string> { "io", "sockets", "sys" },
+
+            // below are all the python features that can be disabled be removing them
+            // from this list.   If this item is omited, all features are available
+            StatementWhiteList = new List<string> {
+                "def",
+                "class",
+                "return",
+                "del",
+                "for",
+                "async for",
+                "while",
+                "if",
+                "with",
+                "async with",
+                "raise",
+                "try",
+                "assert",
+                "import",
+                "import from",
+                "global",
+                "nonlocal",
+                "pass",
+                "break",
+                "continue",
+                "lambda",
+                "setcomp",
+                "listcomp",
+                "dictcomp",
+                "generatorexp",
+                "ifexp",
+                "attribute",
+                "match",
+                "slice" },
         };
 
         string src = @"

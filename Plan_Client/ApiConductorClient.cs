@@ -393,6 +393,9 @@ public class ApiConductorClient
         [JsonPropertyName("module_blacklist")]
         public List<string> ModuleBlacklist { get; set; } = new List<string>();
 
+        [JsonPropertyName("statement_whitelist")]
+        public List<string> StatementWhiteList { get; set; } = new List<string>();
+
         public override string ToString()
         {
             string r = JsonSerializer.Serialize(this, new JsonSerializerOptions { WriteIndented = false });
